@@ -35,7 +35,7 @@ export class TodosComponent implements OnInit {
 
   add(todo:Todo)
   {
-    if(todo.title!="" && todo.desc!="")
+    if(todo.title!=null && todo.desc!=null)
     {
       this.todos.push(todo)
       localStorage.setItem("todos",JSON.stringify(this.todos))
